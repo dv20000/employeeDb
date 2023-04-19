@@ -1,0 +1,529 @@
+[
+    {
+        "label": "boto3",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "boto3",
+        "description": "boto3",
+        "detail": "boto3",
+        "documentation": {}
+    },
+    {
+        "label": "password",
+        "importPath": "Secret_manager",
+        "description": "Secret_manager",
+        "isExtraImport": true,
+        "detail": "Secret_manager",
+        "documentation": {}
+    },
+    {
+        "label": "username",
+        "importPath": "Secret_manager",
+        "description": "Secret_manager",
+        "isExtraImport": true,
+        "detail": "Secret_manager",
+        "documentation": {}
+    },
+    {
+        "label": "password",
+        "importPath": "Secret_manager",
+        "description": "Secret_manager",
+        "isExtraImport": true,
+        "detail": "Secret_manager",
+        "documentation": {}
+    },
+    {
+        "label": "username",
+        "importPath": "Secret_manager",
+        "description": "Secret_manager",
+        "isExtraImport": true,
+        "detail": "Secret_manager",
+        "documentation": {}
+    },
+    {
+        "label": "password",
+        "importPath": "Secret_manager",
+        "description": "Secret_manager",
+        "isExtraImport": true,
+        "detail": "Secret_manager",
+        "documentation": {}
+    },
+    {
+        "label": "username",
+        "importPath": "Secret_manager",
+        "description": "Secret_manager",
+        "isExtraImport": true,
+        "detail": "Secret_manager",
+        "documentation": {}
+    },
+    {
+        "label": "Database",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "bucketname",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "mysql.connector",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "mysql.connector",
+        "description": "mysql.connector",
+        "detail": "mysql.connector",
+        "documentation": {}
+    },
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "render_template",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "kind": 5,
+        "importPath": "boto3 files.RDS",
+        "description": "boto3 files.RDS",
+        "peekOfCode": "client = boto3.client('rds')\nresponse = client.create_db_instance(\n        AllocatedStorage=10,\n        DBInstanceIdentifier=Database,\n        DBInstanceClass=\"db.t2.micro\",\n        Engine=\"mysql\",\n        MasterUsername=username,\n        MasterUserPassword=password,\n        Port=3306\n)",
+        "detail": "boto3 files.RDS",
+        "documentation": {}
+    },
+    {
+        "label": "response",
+        "kind": 5,
+        "importPath": "boto3 files.RDS",
+        "description": "boto3 files.RDS",
+        "peekOfCode": "response = client.create_db_instance(\n        AllocatedStorage=10,\n        DBInstanceIdentifier=Database,\n        DBInstanceClass=\"db.t2.micro\",\n        Engine=\"mysql\",\n        MasterUsername=username,\n        MasterUserPassword=password,\n        Port=3306\n)\nprint (response)",
+        "detail": "boto3 files.RDS",
+        "documentation": {}
+    },
+    {
+        "label": "bucket",
+        "kind": 5,
+        "importPath": "boto3 files.S3",
+        "description": "boto3 files.S3",
+        "peekOfCode": "bucket = boto3.client('s3')\nresponse = bucket.create_bucket(\n    Bucket=bucketname,\n    CreateBucketConfiguration={\n        'LocationConstraint': 'us-west-1' # Replace with your desired region\n    }\n)\nimage_path = '/Users/rohini14/Documents/aws/project/images/Rohini.jpeg'\nobject_key = 'images/Rohini.jpg'\nbucket.upload_file(image_path, bucketname, object_key)",
+        "detail": "boto3 files.S3",
+        "documentation": {}
+    },
+    {
+        "label": "response",
+        "kind": 5,
+        "importPath": "boto3 files.S3",
+        "description": "boto3 files.S3",
+        "peekOfCode": "response = bucket.create_bucket(\n    Bucket=bucketname,\n    CreateBucketConfiguration={\n        'LocationConstraint': 'us-west-1' # Replace with your desired region\n    }\n)\nimage_path = '/Users/rohini14/Documents/aws/project/images/Rohini.jpeg'\nobject_key = 'images/Rohini.jpg'\nbucket.upload_file(image_path, bucketname, object_key)",
+        "detail": "boto3 files.S3",
+        "documentation": {}
+    },
+    {
+        "label": "image_path",
+        "kind": 5,
+        "importPath": "boto3 files.S3",
+        "description": "boto3 files.S3",
+        "peekOfCode": "image_path = '/Users/rohini14/Documents/aws/project/images/Rohini.jpeg'\nobject_key = 'images/Rohini.jpg'\nbucket.upload_file(image_path, bucketname, object_key)",
+        "detail": "boto3 files.S3",
+        "documentation": {}
+    },
+    {
+        "label": "object_key",
+        "kind": 5,
+        "importPath": "boto3 files.S3",
+        "description": "boto3 files.S3",
+        "peekOfCode": "object_key = 'images/Rohini.jpg'\nbucket.upload_file(image_path, bucketname, object_key)",
+        "detail": "boto3 files.S3",
+        "documentation": {}
+    },
+    {
+        "label": "createSecret",
+        "kind": 2,
+        "importPath": "boto3 files.Secret_manager",
+        "description": "boto3 files.Secret_manager",
+        "peekOfCode": "def createSecret():\n    response = client.create_secret(\n        Name='empDBsecret',\n        SecretString='{\"username\": \"root\", \"password\": \"employee123\"}'\n    )\n    return response\ndef fetchSecret():\n    response = client.get_secret_value(\n    SecretId='empDBsecret'\n    )",
+        "detail": "boto3 files.Secret_manager",
+        "documentation": {}
+    },
+    {
+        "label": "fetchSecret",
+        "kind": 2,
+        "importPath": "boto3 files.Secret_manager",
+        "description": "boto3 files.Secret_manager",
+        "peekOfCode": "def fetchSecret():\n    response = client.get_secret_value(\n    SecretId='empDBsecret'\n    )\n    database_secrets = json.loads(response['SecretString'])\n    return database_secrets['username']\ndef fetchSecret1():\n    response = client.get_secret_value(\n    SecretId='empDBsecret'\n    )",
+        "detail": "boto3 files.Secret_manager",
+        "documentation": {}
+    },
+    {
+        "label": "fetchSecret1",
+        "kind": 2,
+        "importPath": "boto3 files.Secret_manager",
+        "description": "boto3 files.Secret_manager",
+        "peekOfCode": "def fetchSecret1():\n    response = client.get_secret_value(\n    SecretId='empDBsecret'\n    )\n    database_secrets = json.loads(response['SecretString'])\n    return database_secrets['password']\n#createresp = createSecret()\n#print(createresp)\nusername = fetchSecret()\nprint(username)",
+        "detail": "boto3 files.Secret_manager",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "kind": 5,
+        "importPath": "boto3 files.Secret_manager",
+        "description": "boto3 files.Secret_manager",
+        "peekOfCode": "client = boto3.client('secretsmanager')\ndef createSecret():\n    response = client.create_secret(\n        Name='empDBsecret',\n        SecretString='{\"username\": \"root\", \"password\": \"employee123\"}'\n    )\n    return response\ndef fetchSecret():\n    response = client.get_secret_value(\n    SecretId='empDBsecret'",
+        "detail": "boto3 files.Secret_manager",
+        "documentation": {}
+    },
+    {
+        "label": "#createresp",
+        "kind": 5,
+        "importPath": "boto3 files.Secret_manager",
+        "description": "boto3 files.Secret_manager",
+        "peekOfCode": "#createresp = createSecret()\n#print(createresp)\nusername = fetchSecret()\nprint(username)\npassword = fetchSecret1()\nprint(password)",
+        "detail": "boto3 files.Secret_manager",
+        "documentation": {}
+    },
+    {
+        "label": "username",
+        "kind": 5,
+        "importPath": "boto3 files.Secret_manager",
+        "description": "boto3 files.Secret_manager",
+        "peekOfCode": "username = fetchSecret()\nprint(username)\npassword = fetchSecret1()\nprint(password)",
+        "detail": "boto3 files.Secret_manager",
+        "documentation": {}
+    },
+    {
+        "label": "password",
+        "kind": 5,
+        "importPath": "boto3 files.Secret_manager",
+        "description": "boto3 files.Secret_manager",
+        "peekOfCode": "password = fetchSecret1()\nprint(password)",
+        "detail": "boto3 files.Secret_manager",
+        "documentation": {}
+    },
+    {
+        "label": "Database",
+        "kind": 5,
+        "importPath": "boto3 files.config",
+        "description": "boto3 files.config",
+        "peekOfCode": "Database = \"Employee\"\nbucketname = \"rohimages\"\nTablename= \"employees\"\nhostname=\"employeedatabase.cjqjmoxodmld.us-east-1.rds.amazonaws.com\"",
+        "detail": "boto3 files.config",
+        "documentation": {}
+    },
+    {
+        "label": "bucketname",
+        "kind": 5,
+        "importPath": "boto3 files.config",
+        "description": "boto3 files.config",
+        "peekOfCode": "bucketname = \"rohimages\"\nTablename= \"employees\"\nhostname=\"employeedatabase.cjqjmoxodmld.us-east-1.rds.amazonaws.com\"",
+        "detail": "boto3 files.config",
+        "documentation": {}
+    },
+    {
+        "label": "db_conn",
+        "kind": 5,
+        "importPath": "boto3 files.insertdata",
+        "description": "boto3 files.insertdata",
+        "peekOfCode": "db_conn = mysql.connector.connect(\n    host=hostname,\n    port=3306,\n    user=username,\n    password=password,\n    database=Database\n)\ncursor=db_conn.cursor()\ncreate_table = \"\"\"\nCREATE TABLE Employee (",
+        "detail": "boto3 files.insertdata",
+        "documentation": {}
+    },
+    {
+        "label": "create_table",
+        "kind": 5,
+        "importPath": "boto3 files.insertdata",
+        "description": "boto3 files.insertdata",
+        "peekOfCode": "create_table = \"\"\"\nCREATE TABLE Employee (\n  emp_id VARCHAR(255) PRIMARY KEY,\n  first_name VARCHAR(255),\n  last_name VARCHAR(255),\n  pri_skill VARCHAR(255),\n  location VARCHAR(255)\n)\"\"\"\n#cursor.execute(create_table)\n#add_data = \"INSERT INTO employees ( first_name, last_name, pri_skill, location) VALUES (%s, %s, %s, %s)\"",
+        "detail": "boto3 files.insertdata",
+        "documentation": {}
+    },
+    {
+        "label": "#add_data",
+        "kind": 5,
+        "importPath": "boto3 files.insertdata",
+        "description": "boto3 files.insertdata",
+        "peekOfCode": "#add_data = \"INSERT INTO employees ( first_name, last_name, pri_skill, location) VALUES (%s, %s, %s, %s)\"\n#data = ('Rohini', 'Reddy', 'Python', 'kansas')\n#çdata = ('Medha', 'Reddy', 'SQL', 'India')\n#emp_id = 1 \n#select_sql = \"SELECT * FROM employees where emp_id = %s\"\n#response =cursor.execute(select_sql , (emp_id))\n#print(response)\n# Execute the SQL statement to insert the data\n#cursor.execute(add_data, data)\n# Commit the changes",
+        "detail": "boto3 files.insertdata",
+        "documentation": {}
+    },
+    {
+        "label": "#data",
+        "kind": 5,
+        "importPath": "boto3 files.insertdata",
+        "description": "boto3 files.insertdata",
+        "peekOfCode": "#data = ('Rohini', 'Reddy', 'Python', 'kansas')\n#çdata = ('Medha', 'Reddy', 'SQL', 'India')\n#emp_id = 1 \n#select_sql = \"SELECT * FROM employees where emp_id = %s\"\n#response =cursor.execute(select_sql , (emp_id))\n#print(response)\n# Execute the SQL statement to insert the data\n#cursor.execute(add_data, data)\n# Commit the changes\n#db_conn.commit()",
+        "detail": "boto3 files.insertdata",
+        "documentation": {}
+    },
+    {
+        "label": "#çdata",
+        "kind": 5,
+        "importPath": "boto3 files.insertdata",
+        "description": "boto3 files.insertdata",
+        "peekOfCode": "#çdata = ('Medha', 'Reddy', 'SQL', 'India')\n#emp_id = 1 \n#select_sql = \"SELECT * FROM employees where emp_id = %s\"\n#response =cursor.execute(select_sql , (emp_id))\n#print(response)\n# Execute the SQL statement to insert the data\n#cursor.execute(add_data, data)\n# Commit the changes\n#db_conn.commit()\n# Close the cursor and connection",
+        "detail": "boto3 files.insertdata",
+        "documentation": {}
+    },
+    {
+        "label": "#emp_id",
+        "kind": 5,
+        "importPath": "boto3 files.insertdata",
+        "description": "boto3 files.insertdata",
+        "peekOfCode": "#emp_id = 1 \n#select_sql = \"SELECT * FROM employees where emp_id = %s\"\n#response =cursor.execute(select_sql , (emp_id))\n#print(response)\n# Execute the SQL statement to insert the data\n#cursor.execute(add_data, data)\n# Commit the changes\n#db_conn.commit()\n# Close the cursor and connection\n#cursor.close()",
+        "detail": "boto3 files.insertdata",
+        "documentation": {}
+    },
+    {
+        "label": "#select_sql",
+        "kind": 5,
+        "importPath": "boto3 files.insertdata",
+        "description": "boto3 files.insertdata",
+        "peekOfCode": "#select_sql = \"SELECT * FROM employees where emp_id = %s\"\n#response =cursor.execute(select_sql , (emp_id))\n#print(response)\n# Execute the SQL statement to insert the data\n#cursor.execute(add_data, data)\n# Commit the changes\n#db_conn.commit()\n# Close the cursor and connection\n#cursor.close()\n#db_conn.close()",
+        "detail": "boto3 files.insertdata",
+        "documentation": {}
+    },
+    {
+        "label": "cursor",
+        "kind": 5,
+        "importPath": "boto3 files.insertdata",
+        "description": "boto3 files.insertdata",
+        "peekOfCode": "cursor = db_conn.cursor()\n# define the employee ID value\nemp_id = 2\n# execute the SELECT query with the employee ID value as a parameter\nquery = \"SELECT * FROM employees WHERE emp_id = %s\"\ncursor.execute(query, (emp_id,))\nmyresult = cursor.fetchall()\nprint(myresult)\n# close the cursor and database connection\ncursor.close()",
+        "detail": "boto3 files.insertdata",
+        "documentation": {}
+    },
+    {
+        "label": "emp_id",
+        "kind": 5,
+        "importPath": "boto3 files.insertdata",
+        "description": "boto3 files.insertdata",
+        "peekOfCode": "emp_id = 2\n# execute the SELECT query with the employee ID value as a parameter\nquery = \"SELECT * FROM employees WHERE emp_id = %s\"\ncursor.execute(query, (emp_id,))\nmyresult = cursor.fetchall()\nprint(myresult)\n# close the cursor and database connection\ncursor.close()\ndb_conn.close()",
+        "detail": "boto3 files.insertdata",
+        "documentation": {}
+    },
+    {
+        "label": "query",
+        "kind": 5,
+        "importPath": "boto3 files.insertdata",
+        "description": "boto3 files.insertdata",
+        "peekOfCode": "query = \"SELECT * FROM employees WHERE emp_id = %s\"\ncursor.execute(query, (emp_id,))\nmyresult = cursor.fetchall()\nprint(myresult)\n# close the cursor and database connection\ncursor.close()\ndb_conn.close()",
+        "detail": "boto3 files.insertdata",
+        "documentation": {}
+    },
+    {
+        "label": "myresult",
+        "kind": 5,
+        "importPath": "boto3 files.insertdata",
+        "description": "boto3 files.insertdata",
+        "peekOfCode": "myresult = cursor.fetchall()\nprint(myresult)\n# close the cursor and database connection\ncursor.close()\ndb_conn.close()",
+        "detail": "boto3 files.insertdata",
+        "documentation": {}
+    },
+    {
+        "label": "createSecret",
+        "kind": 2,
+        "importPath": "Secret_manager",
+        "description": "Secret_manager",
+        "peekOfCode": "def createSecret():\n    response = client.create_secret(\n        Name='empDBsecret',\n        SecretString='{\"username\": \"root\", \"password\": \"employee123\"}'\n    )\n    return response\ndef fetchSecret():\n    response = client.get_secret_value(\n    SecretId='empDBsecret'\n    )",
+        "detail": "Secret_manager",
+        "documentation": {}
+    },
+    {
+        "label": "fetchSecret",
+        "kind": 2,
+        "importPath": "Secret_manager",
+        "description": "Secret_manager",
+        "peekOfCode": "def fetchSecret():\n    response = client.get_secret_value(\n    SecretId='empDBsecret'\n    )\n    database_secrets = json.loads(response['SecretString'])\n    return database_secrets['username']\ndef fetchSecret1():\n    response = client.get_secret_value(\n    SecretId='empDBsecret'\n    )",
+        "detail": "Secret_manager",
+        "documentation": {}
+    },
+    {
+        "label": "fetchSecret1",
+        "kind": 2,
+        "importPath": "Secret_manager",
+        "description": "Secret_manager",
+        "peekOfCode": "def fetchSecret1():\n    response = client.get_secret_value(\n    SecretId='empDBsecret'\n    )\n    database_secrets = json.loads(response['SecretString'])\n    return database_secrets['password']\n#createresp = createSecret()\n#print(createresp)\nusername = fetchSecret()\nprint(username)",
+        "detail": "Secret_manager",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "kind": 5,
+        "importPath": "Secret_manager",
+        "description": "Secret_manager",
+        "peekOfCode": "client = boto3.client('secretsmanager')\ndef createSecret():\n    response = client.create_secret(\n        Name='empDBsecret',\n        SecretString='{\"username\": \"root\", \"password\": \"employee123\"}'\n    )\n    return response\ndef fetchSecret():\n    response = client.get_secret_value(\n    SecretId='empDBsecret'",
+        "detail": "Secret_manager",
+        "documentation": {}
+    },
+    {
+        "label": "#createresp",
+        "kind": 5,
+        "importPath": "Secret_manager",
+        "description": "Secret_manager",
+        "peekOfCode": "#createresp = createSecret()\n#print(createresp)\nusername = fetchSecret()\nprint(username)\npassword = fetchSecret1()\nprint(password)",
+        "detail": "Secret_manager",
+        "documentation": {}
+    },
+    {
+        "label": "username",
+        "kind": 5,
+        "importPath": "Secret_manager",
+        "description": "Secret_manager",
+        "peekOfCode": "username = fetchSecret()\nprint(username)\npassword = fetchSecret1()\nprint(password)",
+        "detail": "Secret_manager",
+        "documentation": {}
+    },
+    {
+        "label": "password",
+        "kind": 5,
+        "importPath": "Secret_manager",
+        "description": "Secret_manager",
+        "peekOfCode": "password = fetchSecret1()\nprint(password)",
+        "detail": "Secret_manager",
+        "documentation": {}
+    },
+    {
+        "label": "home",
+        "kind": 2,
+        "importPath": "application",
+        "description": "application",
+        "peekOfCode": "def home():\n    return render_template('AddEmp.html')\n@app.route(\"/addemployee\", methods=['GET','POST'])\ndef AddEmployee():\n    return render_template('AddEmp.html')\n@app.route(\"/addemp\", methods=['POST'])\ndef AddEmp():\n    emp_id = request.form['emp_id']\n    first_name = request.form['first_name']\n    last_name = request.form['last_name']",
+        "detail": "application",
+        "documentation": {}
+    },
+    {
+        "label": "AddEmployee",
+        "kind": 2,
+        "importPath": "application",
+        "description": "application",
+        "peekOfCode": "def AddEmployee():\n    return render_template('AddEmp.html')\n@app.route(\"/addemp\", methods=['POST'])\ndef AddEmp():\n    emp_id = request.form['emp_id']\n    first_name = request.form['first_name']\n    last_name = request.form['last_name']\n    pri_skill = request.form['pri_skill']\n    location = request.form['location']\n    emp_image_file = request.files['emp_image_file']",
+        "detail": "application",
+        "documentation": {}
+    },
+    {
+        "label": "AddEmp",
+        "kind": 2,
+        "importPath": "application",
+        "description": "application",
+        "peekOfCode": "def AddEmp():\n    emp_id = request.form['emp_id']\n    first_name = request.form['first_name']\n    last_name = request.form['last_name']\n    pri_skill = request.form['pri_skill']\n    location = request.form['location']\n    emp_image_file = request.files['emp_image_file']\n    add_data = \"INSERT INTO employees ( emp_id ,first_name, last_name, pri_skill, location) VALUES (%s, %s, %s, %s, %s)\"\n    data = (emp_id, first_name, last_name, pri_skill, location)\n    cursor = db_conn.cursor()",
+        "detail": "application",
+        "documentation": {}
+    },
+    {
+        "label": "GetEmployee",
+        "kind": 2,
+        "importPath": "application",
+        "description": "application",
+        "peekOfCode": "def GetEmployee():\n    return render_template('GetEmp.html')\n@app.route(\"/fetchdata\", methods=['POST'])\ndef GetEmp():\n    cursor = db_conn.cursor()\n    emp_id = request.form['emp_id']\n    query = \"SELECT * FROM employees WHERE emp_id = %s\"\n    try:\n        cursor.execute(query, (emp_id,))\n        myresult = cursor.fetchall()",
+        "detail": "application",
+        "documentation": {}
+    },
+    {
+        "label": "GetEmp",
+        "kind": 2,
+        "importPath": "application",
+        "description": "application",
+        "peekOfCode": "def GetEmp():\n    cursor = db_conn.cursor()\n    emp_id = request.form['emp_id']\n    query = \"SELECT * FROM employees WHERE emp_id = %s\"\n    try:\n        cursor.execute(query, (emp_id,))\n        myresult = cursor.fetchall()\n        print(myresult)\n    except Exception as e:\n        return str(e)",
+        "detail": "application",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "application",
+        "description": "application",
+        "peekOfCode": "app = Flask(__name__)\ndb_conn = mysql.connector.connect(\n    host=hostname,\n    port=3306,\n    user=username,\n    password=password,\n    database=Database)\ncursor=db_conn.cursor()\n#output = {}\n#table = Tablename",
+        "detail": "application",
+        "documentation": {}
+    },
+    {
+        "label": "db_conn",
+        "kind": 5,
+        "importPath": "application",
+        "description": "application",
+        "peekOfCode": "db_conn = mysql.connector.connect(\n    host=hostname,\n    port=3306,\n    user=username,\n    password=password,\n    database=Database)\ncursor=db_conn.cursor()\n#output = {}\n#table = Tablename\nbucket= bucketname",
+        "detail": "application",
+        "documentation": {}
+    },
+    {
+        "label": "#output",
+        "kind": 5,
+        "importPath": "application",
+        "description": "application",
+        "peekOfCode": "#output = {}\n#table = Tablename\nbucket= bucketname\n@app.route(\"/\", methods=['GET', 'POST'])\ndef home():\n    return render_template('AddEmp.html')\n@app.route(\"/addemployee\", methods=['GET','POST'])\ndef AddEmployee():\n    return render_template('AddEmp.html')\n@app.route(\"/addemp\", methods=['POST'])",
+        "detail": "application",
+        "documentation": {}
+    },
+    {
+        "label": "#table",
+        "kind": 5,
+        "importPath": "application",
+        "description": "application",
+        "peekOfCode": "#table = Tablename\nbucket= bucketname\n@app.route(\"/\", methods=['GET', 'POST'])\ndef home():\n    return render_template('AddEmp.html')\n@app.route(\"/addemployee\", methods=['GET','POST'])\ndef AddEmployee():\n    return render_template('AddEmp.html')\n@app.route(\"/addemp\", methods=['POST'])\ndef AddEmp():",
+        "detail": "application",
+        "documentation": {}
+    },
+    {
+        "label": "Database",
+        "kind": 5,
+        "importPath": "config",
+        "description": "config",
+        "peekOfCode": "Database = \"Employee\"\nbucketname = \"rohimages\"\nTablename= \"employees\"\nhostname=\"employeedatabase.cjqjmoxodmld.us-east-1.rds.amazonaws.com\"",
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "bucketname",
+        "kind": 5,
+        "importPath": "config",
+        "description": "config",
+        "peekOfCode": "bucketname = \"rohimages\"\nTablename= \"employees\"\nhostname=\"employeedatabase.cjqjmoxodmld.us-east-1.rds.amazonaws.com\"",
+        "detail": "config",
+        "documentation": {}
+    }
+]
