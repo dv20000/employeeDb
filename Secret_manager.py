@@ -5,28 +5,28 @@ client = boto3.client('secretsmanager')
 
 def createSecret():
     response = client.create_secret(
-        Name='empDBsecret',
+        Name='TestDBsecret',
         SecretString='{"username": "root", "password": "employee123"}'
     )
     return response
 
+#createresp = createSecret()
+#print(createresp)
+
+
 def fetchSecret():
     response = client.get_secret_value(
-    SecretId='empDBsecret'
+    SecretId='TestDBsecret'
     )
     database_secrets = json.loads(response['SecretString'])
     return database_secrets['username']
 
 def fetchSecret1():
     response = client.get_secret_value(
-    SecretId='empDBsecret'
+    SecretId='TestDBsecret'
     )
     database_secrets = json.loads(response['SecretString'])
     return database_secrets['password']
-
-
-#createresp = createSecret()
-#print(createresp)
 
 username = fetchSecret()
 print(username)
