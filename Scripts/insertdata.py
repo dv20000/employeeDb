@@ -1,8 +1,7 @@
 import boto3
 import mysql.connector
-from Secret_manager import password, username
 from config import *
-
+"""
 db_conn = mysql.connector.connect(
     host=hostname,
     port=3306,
@@ -11,16 +10,16 @@ db_conn = mysql.connector.connect(
     database=Database
 
 )
-cursor=db_conn.cursor()
-
+cursor=db_conn.cursor()"""
+"""
 create_table = """
-CREATE TABLE Employee (
-  emp_id VARCHAR(255) PRIMARY KEY,
-  first_name VARCHAR(255),
-  last_name VARCHAR(255),
-  pri_skill VARCHAR(255),
-  location VARCHAR(255)
-)"""
+#CREATE TABLE Employee (
+#  emp_id VARCHAR(255) PRIMARY KEY,
+#  first_name VARCHAR(255),
+#  last_name VARCHAR(255),
+#  pri_skill VARCHAR(255),
+#  location VARCHAR(255)
+#)"""
 
 #cursor.execute(create_table)
 
@@ -47,7 +46,7 @@ CREATE TABLE Employee (
 #cursor.close()
 #db_conn.close()
 
-
+"""
 cursor = db_conn.cursor()
 
 # define the employee ID value
@@ -65,4 +64,4 @@ print(myresult)
 
 # close the cursor and database connection
 cursor.close()
-db_conn.close()
+db_conn.close() """

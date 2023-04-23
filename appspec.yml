@@ -2,6 +2,4 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /webapps/
-  - source: /main
-    destination: /webapps/myApp
+    destination: /App/

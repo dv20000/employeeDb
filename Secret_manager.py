@@ -28,9 +28,9 @@ def fetchSecret1():
     database_secrets = json.loads(response['SecretString'])
     return database_secrets['password']
 
-username = fetchSecret()
-print(username)
+#username = fetchSecret()
+#print(username)
 
-password = fetchSecret1()
-print(password)
+#password = fetchSecret1()
+#print(password)
 

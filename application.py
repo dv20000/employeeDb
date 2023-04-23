@@ -17,7 +17,7 @@ cursor=db_conn.cursor()
 
 #output = {}
 #table = Tablename
-bucket= bucketname
+#bucket= bucketname
 
 
 @app.route("/", methods=['GET', 'POST'])

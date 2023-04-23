@@ -1,11 +1,24 @@
 import boto3 
 import json
 import mysql.connector
-from Secret_manager import*
 from flask import Flask,render_template,request
 from config import *
 
 app = Flask(__name__)
+
+client = boto3.client('secretsmanager')
+
+response = client.get_secret_value(
+  SecretId='Testst1'
+   )
+database_secrets = json.loads(response['SecretString'])
+username = database_secrets['username']
+    
+response = client.get_secret_value(
+    SecretId='Testst1'
+    )
+database_secrets = json.loads(response['SecretString'])
+password = database_secrets['password']
 
 db_conn = mysql.connector.connect(
     host=hostname,
@@ -14,9 +27,6 @@ db_conn = mysql.connector.connect(
     password=password,
     database=Database)
 
-cursor=db_conn.cursor()
-
-#output = {}
 
 @app.route("/", methods=['GET', 'POST'])
 def home():
@@ -35,9 +45,8 @@ def AddEmp():
     last_name = request.form['last_name']
     pri_skill = request.form['pri_skill']
     Company = request.form['Company']
-    emp_image_file = request.files['emp_image_file']
 
-    add_data = "INSERT INTO Employee ( emp_id ,first_name, last_name, pri_skill, Company) VALUES (%s, %s, %s, %s, %s)"
+    add_data = "INSERT INTO Emp ( emp_id ,first_name, last_name, pri_skill, Company) VALUES (%s, %s, %s, %s, %s)"
 
     data = (emp_id, first_name, last_name, pri_skill, Company)
     cursor = db_conn.cursor()
@@ -59,7 +68,7 @@ def GetEmployee():
 def GetEmp():
     cursor = db_conn.cursor()
     emp_id = request.form['emp_id']
-    query = "SELECT * FROM Employee WHERE emp_id = %s"
+    query = "SELECT * FROM Emp WHERE emp_id = %s"
 
     try:
         cursor.execute(query, (emp_id,))
