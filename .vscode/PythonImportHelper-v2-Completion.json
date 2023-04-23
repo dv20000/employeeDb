@@ -18,54 +18,6 @@
         "documentation": {}
     },
     {
-        "label": "bucketname",
-        "importPath": "config",
-        "description": "config",
-        "isExtraImport": true,
-        "detail": "config",
-        "documentation": {}
-    },
-    {
-        "label": "*",
-        "importPath": "config",
-        "description": "config",
-        "isExtraImport": true,
-        "detail": "config",
-        "documentation": {}
-    },
-    {
-        "label": "*",
-        "importPath": "config",
-        "description": "config",
-        "isExtraImport": true,
-        "detail": "config",
-        "documentation": {}
-    },
-    {
-        "label": "Database",
-        "importPath": "config",
-        "description": "config",
-        "isExtraImport": true,
-        "detail": "config",
-        "documentation": {}
-    },
-    {
-        "label": "*",
-        "importPath": "config",
-        "description": "config",
-        "isExtraImport": true,
-        "detail": "config",
-        "documentation": {}
-    },
-    {
-        "label": "*",
-        "importPath": "config",
-        "description": "config",
-        "isExtraImport": true,
-        "detail": "config",
-        "documentation": {}
-    },
-    {
         "label": "json",
         "kind": 6,
         "isExtraImport": true,
@@ -75,38 +27,6 @@
         "documentation": {}
     },
     {
-        "label": "pwd",
-        "importPath": "Secret_manager",
-        "description": "Secret_manager",
-        "isExtraImport": true,
-        "detail": "Secret_manager",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "Secret_manager",
-        "description": "Secret_manager",
-        "isExtraImport": true,
-        "detail": "Secret_manager",
-        "documentation": {}
-    },
-    {
-        "label": "password",
-        "importPath": "Secret_manager",
-        "description": "Secret_manager",
-        "isExtraImport": true,
-        "detail": "Secret_manager",
-        "documentation": {}
-    },
-    {
-        "label": "username",
-        "importPath": "Secret_manager",
-        "description": "Secret_manager",
-        "isExtraImport": true,
-        "detail": "Secret_manager",
-        "documentation": {}
-    },
-    {
         "label": "Flask",
         "importPath": "flask",
         "description": "flask",
@@ -131,27 +51,11 @@
         "documentation": {}
     },
     {
-        "label": "Flask",
-        "importPath": "flask",
-        "description": "flask",
+        "label": "*",
+        "importPath": "config",
+        "description": "config",
         "isExtraImport": true,
-        "detail": "flask",
-        "documentation": {}
-    },
-    {
-        "label": "render_template",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
-        "documentation": {}
-    },
-    {
-        "label": "request",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
+        "detail": "config",
         "documentation": {}
     },
     {
@@ -197,42 +101,6 @@
         "description": "Scripts.RDS",
         "peekOfCode": "create_table = \"\"\"\n#CREATE TABLE Employee (\n#  emp_id VARCHAR(255) PRIMARY KEY,\n#  first_name VARCHAR(255),\n# last_name VARCHAR(255),\n#  pri_skill VARCHAR(255),\n#  Company VARCHAR(255)\n#)\"\"\"\n\"\"\"\ncursor.execute(create_table)",
         "detail": "Scripts.RDS",
-        "documentation": {}
-    },
-    {
-        "label": "bucket",
-        "kind": 5,
-        "importPath": "Scripts.S3",
-        "description": "Scripts.S3",
-        "peekOfCode": "bucket = boto3.client('s3')\nresponse = bucket.create_bucket(\n    Bucket=bucketname,\n    CreateBucketConfiguration={\n        'LocationConstraint': 'us-west-1' # Replace with your desired region\n    }\n)\nimage_path = '/Users/rohini14/Documents/aws/project/images/Rohini.jpeg'\nobject_key = 'images/Rohini.jpg'\nbucket.upload_file(image_path, bucketname, object_key)",
-        "detail": "Scripts.S3",
-        "documentation": {}
-    },
-    {
-        "label": "response",
-        "kind": 5,
-        "importPath": "Scripts.S3",
-        "description": "Scripts.S3",
-        "peekOfCode": "response = bucket.create_bucket(\n    Bucket=bucketname,\n    CreateBucketConfiguration={\n        'LocationConstraint': 'us-west-1' # Replace with your desired region\n    }\n)\nimage_path = '/Users/rohini14/Documents/aws/project/images/Rohini.jpeg'\nobject_key = 'images/Rohini.jpg'\nbucket.upload_file(image_path, bucketname, object_key)",
-        "detail": "Scripts.S3",
-        "documentation": {}
-    },
-    {
-        "label": "image_path",
-        "kind": 5,
-        "importPath": "Scripts.S3",
-        "description": "Scripts.S3",
-        "peekOfCode": "image_path = '/Users/rohini14/Documents/aws/project/images/Rohini.jpeg'\nobject_key = 'images/Rohini.jpg'\nbucket.upload_file(image_path, bucketname, object_key)",
-        "detail": "Scripts.S3",
-        "documentation": {}
-    },
-    {
-        "label": "object_key",
-        "kind": 5,
-        "importPath": "Scripts.S3",
-        "description": "Scripts.S3",
-        "peekOfCode": "object_key = 'images/Rohini.jpg'\nbucket.upload_file(image_path, bucketname, object_key)",
-        "detail": "Scripts.S3",
         "documentation": {}
     },
     {
@@ -317,294 +185,6 @@
         "documentation": {}
     },
     {
-        "label": "db_conn",
-        "kind": 5,
-        "importPath": "Scripts.insertdata",
-        "description": "Scripts.insertdata",
-        "peekOfCode": "db_conn = mysql.connector.connect(\n    host=hostname,\n    port=3306,\n    user=username,\n    password=password,\n    database=Database\n)\ncursor=db_conn.cursor()\"\"\"\n\"\"\"\ncreate_table = \"\"\"",
-        "detail": "Scripts.insertdata",
-        "documentation": {}
-    },
-    {
-        "label": "create_table",
-        "kind": 5,
-        "importPath": "Scripts.insertdata",
-        "description": "Scripts.insertdata",
-        "peekOfCode": "create_table = \"\"\"\n#CREATE TABLE Employee (\n#  emp_id VARCHAR(255) PRIMARY KEY,\n#  first_name VARCHAR(255),\n#  last_name VARCHAR(255),\n#  pri_skill VARCHAR(255),\n#  location VARCHAR(255)\n#)\"\"\"\n#cursor.execute(create_table)\n#add_data = \"INSERT INTO employees ( first_name, last_name, pri_skill, location) VALUES (%s, %s, %s, %s)\"",
-        "detail": "Scripts.insertdata",
-        "documentation": {}
-    },
-    {
-        "label": "#add_data",
-        "kind": 5,
-        "importPath": "Scripts.insertdata",
-        "description": "Scripts.insertdata",
-        "peekOfCode": "#add_data = \"INSERT INTO employees ( first_name, last_name, pri_skill, location) VALUES (%s, %s, %s, %s)\"\n#data = ('Rohini', 'Reddy', 'Python', 'kansas')\n#çdata = ('Medha', 'Reddy', 'SQL', 'India')\n#emp_id = 1 \n#select_sql = \"SELECT * FROM employees where emp_id = %s\"\n#response =cursor.execute(select_sql , (emp_id))\n#print(response)\n# Execute the SQL statement to insert the data\n#cursor.execute(add_data, data)\n# Commit the changes",
-        "detail": "Scripts.insertdata",
-        "documentation": {}
-    },
-    {
-        "label": "#data",
-        "kind": 5,
-        "importPath": "Scripts.insertdata",
-        "description": "Scripts.insertdata",
-        "peekOfCode": "#data = ('Rohini', 'Reddy', 'Python', 'kansas')\n#çdata = ('Medha', 'Reddy', 'SQL', 'India')\n#emp_id = 1 \n#select_sql = \"SELECT * FROM employees where emp_id = %s\"\n#response =cursor.execute(select_sql , (emp_id))\n#print(response)\n# Execute the SQL statement to insert the data\n#cursor.execute(add_data, data)\n# Commit the changes\n#db_conn.commit()",
-        "detail": "Scripts.insertdata",
-        "documentation": {}
-    },
-    {
-        "label": "#çdata",
-        "kind": 5,
-        "importPath": "Scripts.insertdata",
-        "description": "Scripts.insertdata",
-        "peekOfCode": "#çdata = ('Medha', 'Reddy', 'SQL', 'India')\n#emp_id = 1 \n#select_sql = \"SELECT * FROM employees where emp_id = %s\"\n#response =cursor.execute(select_sql , (emp_id))\n#print(response)\n# Execute the SQL statement to insert the data\n#cursor.execute(add_data, data)\n# Commit the changes\n#db_conn.commit()\n# Close the cursor and connection",
-        "detail": "Scripts.insertdata",
-        "documentation": {}
-    },
-    {
-        "label": "#emp_id",
-        "kind": 5,
-        "importPath": "Scripts.insertdata",
-        "description": "Scripts.insertdata",
-        "peekOfCode": "#emp_id = 1 \n#select_sql = \"SELECT * FROM employees where emp_id = %s\"\n#response =cursor.execute(select_sql , (emp_id))\n#print(response)\n# Execute the SQL statement to insert the data\n#cursor.execute(add_data, data)\n# Commit the changes\n#db_conn.commit()\n# Close the cursor and connection\n#cursor.close()",
-        "detail": "Scripts.insertdata",
-        "documentation": {}
-    },
-    {
-        "label": "#select_sql",
-        "kind": 5,
-        "importPath": "Scripts.insertdata",
-        "description": "Scripts.insertdata",
-        "peekOfCode": "#select_sql = \"SELECT * FROM employees where emp_id = %s\"\n#response =cursor.execute(select_sql , (emp_id))\n#print(response)\n# Execute the SQL statement to insert the data\n#cursor.execute(add_data, data)\n# Commit the changes\n#db_conn.commit()\n# Close the cursor and connection\n#cursor.close()\n#db_conn.close()",
-        "detail": "Scripts.insertdata",
-        "documentation": {}
-    },
-    {
-        "label": "cursor",
-        "kind": 5,
-        "importPath": "Scripts.insertdata",
-        "description": "Scripts.insertdata",
-        "peekOfCode": "cursor = db_conn.cursor()\n# define the employee ID value\nemp_id = 2\n# execute the SELECT query with the employee ID value as a parameter\nquery = \"SELECT * FROM employees WHERE emp_id = %s\"\ncursor.execute(query, (emp_id,))\nmyresult = cursor.fetchall()\nprint(myresult)\n# close the cursor and database connection\ncursor.close()",
-        "detail": "Scripts.insertdata",
-        "documentation": {}
-    },
-    {
-        "label": "emp_id",
-        "kind": 5,
-        "importPath": "Scripts.insertdata",
-        "description": "Scripts.insertdata",
-        "peekOfCode": "emp_id = 2\n# execute the SELECT query with the employee ID value as a parameter\nquery = \"SELECT * FROM employees WHERE emp_id = %s\"\ncursor.execute(query, (emp_id,))\nmyresult = cursor.fetchall()\nprint(myresult)\n# close the cursor and database connection\ncursor.close()\ndb_conn.close() \"\"\"",
-        "detail": "Scripts.insertdata",
-        "documentation": {}
-    },
-    {
-        "label": "query",
-        "kind": 5,
-        "importPath": "Scripts.insertdata",
-        "description": "Scripts.insertdata",
-        "peekOfCode": "query = \"SELECT * FROM employees WHERE emp_id = %s\"\ncursor.execute(query, (emp_id,))\nmyresult = cursor.fetchall()\nprint(myresult)\n# close the cursor and database connection\ncursor.close()\ndb_conn.close() \"\"\"",
-        "detail": "Scripts.insertdata",
-        "documentation": {}
-    },
-    {
-        "label": "myresult",
-        "kind": 5,
-        "importPath": "Scripts.insertdata",
-        "description": "Scripts.insertdata",
-        "peekOfCode": "myresult = cursor.fetchall()\nprint(myresult)\n# close the cursor and database connection\ncursor.close()\ndb_conn.close() \"\"\"",
-        "detail": "Scripts.insertdata",
-        "documentation": {}
-    },
-    {
-        "label": "client",
-        "kind": 5,
-        "importPath": "boto3_files.RDS",
-        "description": "boto3_files.RDS",
-        "peekOfCode": "client = boto3.client('rds')\nresponse = client.create_db_instance(\n        AllocatedStorage=10,\n        DBInstanceIdentifier=Database,\n        DBInstanceClass=\"db.t2.micro\",\n        Engine=\"mysql\",\n        MasterUsername=User,\n        MasterUserPassword=pwd,\n        Port=3306\n)",
-        "detail": "boto3_files.RDS",
-        "documentation": {}
-    },
-    {
-        "label": "response",
-        "kind": 5,
-        "importPath": "boto3_files.RDS",
-        "description": "boto3_files.RDS",
-        "peekOfCode": "response = client.create_db_instance(\n        AllocatedStorage=10,\n        DBInstanceIdentifier=Database,\n        DBInstanceClass=\"db.t2.micro\",\n        Engine=\"mysql\",\n        MasterUsername=User,\n        MasterUserPassword=pwd,\n        Port=3306\n)\nprint (response)",
-        "detail": "boto3_files.RDS",
-        "documentation": {}
-    },
-    {
-        "label": "db_conn",
-        "kind": 5,
-        "importPath": "boto3_files.RDS",
-        "description": "boto3_files.RDS",
-        "peekOfCode": "db_conn = mysql.connector.connect(\n    host=hostname,\n    port=3306,\n    user=username,\n    password=password,\n)\ncursor=db_conn.cursor()\ncreate_db_command = \"CREATE DATABASE Empdatabase;\"\n# Execute the SQL command to create the database\ncursor.execute(create_db_command)",
-        "detail": "boto3_files.RDS",
-        "documentation": {}
-    },
-    {
-        "label": "create_db_command",
-        "kind": 5,
-        "importPath": "boto3_files.RDS",
-        "description": "boto3_files.RDS",
-        "peekOfCode": "create_db_command = \"CREATE DATABASE Empdatabase;\"\n# Execute the SQL command to create the database\ncursor.execute(create_db_command)\ncreate_table = \"\"\"\n#CREATE TABLE Employee (\n#  emp_id VARCHAR(255) PRIMARY KEY,\n#  first_name VARCHAR(255),\n# last_name VARCHAR(255),\n#  pri_skill VARCHAR(255),\n#  Company VARCHAR(255)",
-        "detail": "boto3_files.RDS",
-        "documentation": {}
-    },
-    {
-        "label": "create_table",
-        "kind": 5,
-        "importPath": "boto3_files.RDS",
-        "description": "boto3_files.RDS",
-        "peekOfCode": "create_table = \"\"\"\n#CREATE TABLE Employee (\n#  emp_id VARCHAR(255) PRIMARY KEY,\n#  first_name VARCHAR(255),\n# last_name VARCHAR(255),\n#  pri_skill VARCHAR(255),\n#  Company VARCHAR(255)\n#)\"\"\"\n\"\"\"\ncursor.execute(create_table)",
-        "detail": "boto3_files.RDS",
-        "documentation": {}
-    },
-    {
-        "label": "Database",
-        "kind": 5,
-        "importPath": "boto3_files.config",
-        "description": "boto3_files.config",
-        "peekOfCode": "Database = \"testDB\"\nhostname=\"employee.cjqjmoxodmld.us-east-1.rds.amazonaws.com\"",
-        "detail": "boto3_files.config",
-        "documentation": {}
-    },
-    {
-        "label": "ec2",
-        "kind": 5,
-        "importPath": "Ec2",
-        "description": "Ec2",
-        "peekOfCode": "ec2 = boto3.client('ec2')\n# Define instance parameters\nimage_id = 'ami-0c94855ba95c71c99'  # Amazon Linux 2 AMI (HVM), SSD Volume Type\ninstance_type = 't2.micro'\nkey_name = 'my-ec2-key'\nsubnet_id = 'subnet-123456'\nsecurity_group_ids = ['sg-123456']\n# Create the EC2 instance\nresponse = ec2.run_instances(\n    ImageId=image_id,",
-        "detail": "Ec2",
-        "documentation": {}
-    },
-    {
-        "label": "image_id",
-        "kind": 5,
-        "importPath": "Ec2",
-        "description": "Ec2",
-        "peekOfCode": "image_id = 'ami-0c94855ba95c71c99'  # Amazon Linux 2 AMI (HVM), SSD Volume Type\ninstance_type = 't2.micro'\nkey_name = 'my-ec2-key'\nsubnet_id = 'subnet-123456'\nsecurity_group_ids = ['sg-123456']\n# Create the EC2 instance\nresponse = ec2.run_instances(\n    ImageId=image_id,\n    InstanceType=instance_type,\n    KeyName=key_name,",
-        "detail": "Ec2",
-        "documentation": {}
-    },
-    {
-        "label": "instance_type",
-        "kind": 5,
-        "importPath": "Ec2",
-        "description": "Ec2",
-        "peekOfCode": "instance_type = 't2.micro'\nkey_name = 'my-ec2-key'\nsubnet_id = 'subnet-123456'\nsecurity_group_ids = ['sg-123456']\n# Create the EC2 instance\nresponse = ec2.run_instances(\n    ImageId=image_id,\n    InstanceType=instance_type,\n    KeyName=key_name,\n    SubnetId=subnet_id,",
-        "detail": "Ec2",
-        "documentation": {}
-    },
-    {
-        "label": "key_name",
-        "kind": 5,
-        "importPath": "Ec2",
-        "description": "Ec2",
-        "peekOfCode": "key_name = 'my-ec2-key'\nsubnet_id = 'subnet-123456'\nsecurity_group_ids = ['sg-123456']\n# Create the EC2 instance\nresponse = ec2.run_instances(\n    ImageId=image_id,\n    InstanceType=instance_type,\n    KeyName=key_name,\n    SubnetId=subnet_id,\n    SecurityGroupIds=security_group_ids,",
-        "detail": "Ec2",
-        "documentation": {}
-    },
-    {
-        "label": "subnet_id",
-        "kind": 5,
-        "importPath": "Ec2",
-        "description": "Ec2",
-        "peekOfCode": "subnet_id = 'subnet-123456'\nsecurity_group_ids = ['sg-123456']\n# Create the EC2 instance\nresponse = ec2.run_instances(\n    ImageId=image_id,\n    InstanceType=instance_type,\n    KeyName=key_name,\n    SubnetId=subnet_id,\n    SecurityGroupIds=security_group_ids,\n    MaxCount=1,",
-        "detail": "Ec2",
-        "documentation": {}
-    },
-    {
-        "label": "security_group_ids",
-        "kind": 5,
-        "importPath": "Ec2",
-        "description": "Ec2",
-        "peekOfCode": "security_group_ids = ['sg-123456']\n# Create the EC2 instance\nresponse = ec2.run_instances(\n    ImageId=image_id,\n    InstanceType=instance_type,\n    KeyName=key_name,\n    SubnetId=subnet_id,\n    SecurityGroupIds=security_group_ids,\n    MaxCount=1,\n    MinCount=1,",
-        "detail": "Ec2",
-        "documentation": {}
-    },
-    {
-        "label": "response",
-        "kind": 5,
-        "importPath": "Ec2",
-        "description": "Ec2",
-        "peekOfCode": "response = ec2.run_instances(\n    ImageId=image_id,\n    InstanceType=instance_type,\n    KeyName=key_name,\n    SubnetId=subnet_id,\n    SecurityGroupIds=security_group_ids,\n    MaxCount=1,\n    MinCount=1,\n    InstanceInitiatedShutdownBehavior='terminate'\n)",
-        "detail": "Ec2",
-        "documentation": {}
-    },
-    {
-        "label": "instance_id",
-        "kind": 5,
-        "importPath": "Ec2",
-        "description": "Ec2",
-        "peekOfCode": "instance_id = response['Instances'][0]['InstanceId']\n# Print the instance ID\nprint(f'EC2 instance created with ID: {instance_id}')",
-        "detail": "Ec2",
-        "documentation": {}
-    },
-    {
-        "label": "createSecret",
-        "kind": 2,
-        "importPath": "Secret_manager",
-        "description": "Secret_manager",
-        "peekOfCode": "def createSecret():\n    response = client.create_secret(\n        Name='TestDBsecret',\n        SecretString='{\"username\": \"root\", \"password\": \"employee123\"}'\n    )\n    return response\n#createresp = createSecret()\n#print(createresp)\ndef fetchSecret():\n    response = client.get_secret_value(",
-        "detail": "Secret_manager",
-        "documentation": {}
-    },
-    {
-        "label": "fetchSecret",
-        "kind": 2,
-        "importPath": "Secret_manager",
-        "description": "Secret_manager",
-        "peekOfCode": "def fetchSecret():\n    response = client.get_secret_value(\n    SecretId='TestDBsecret'\n    )\n    database_secrets = json.loads(response['SecretString'])\n    return database_secrets['username']\ndef fetchSecret1():\n    response = client.get_secret_value(\n    SecretId='TestDBsecret'\n    )",
-        "detail": "Secret_manager",
-        "documentation": {}
-    },
-    {
-        "label": "fetchSecret1",
-        "kind": 2,
-        "importPath": "Secret_manager",
-        "description": "Secret_manager",
-        "peekOfCode": "def fetchSecret1():\n    response = client.get_secret_value(\n    SecretId='TestDBsecret'\n    )\n    database_secrets = json.loads(response['SecretString'])\n    return database_secrets['password']\n#username = fetchSecret()\n#print(username)\n#password = fetchSecret1()\n#print(password)",
-        "detail": "Secret_manager",
-        "documentation": {}
-    },
-    {
-        "label": "client",
-        "kind": 5,
-        "importPath": "Secret_manager",
-        "description": "Secret_manager",
-        "peekOfCode": "client = boto3.client('secretsmanager')\ndef createSecret():\n    response = client.create_secret(\n        Name='TestDBsecret',\n        SecretString='{\"username\": \"root\", \"password\": \"employee123\"}'\n    )\n    return response\n#createresp = createSecret()\n#print(createresp)\ndef fetchSecret():",
-        "detail": "Secret_manager",
-        "documentation": {}
-    },
-    {
-        "label": "#createresp",
-        "kind": 5,
-        "importPath": "Secret_manager",
-        "description": "Secret_manager",
-        "peekOfCode": "#createresp = createSecret()\n#print(createresp)\ndef fetchSecret():\n    response = client.get_secret_value(\n    SecretId='TestDBsecret'\n    )\n    database_secrets = json.loads(response['SecretString'])\n    return database_secrets['username']\ndef fetchSecret1():\n    response = client.get_secret_value(",
-        "detail": "Secret_manager",
-        "documentation": {}
-    },
-    {
-        "label": "#username",
-        "kind": 5,
-        "importPath": "Secret_manager",
-        "description": "Secret_manager",
-        "peekOfCode": "#username = fetchSecret()\n#print(username)\n#password = fetchSecret1()\n#print(password)",
-        "detail": "Secret_manager",
-        "documentation": {}
-    },
-    {
-        "label": "#password",
-        "kind": 5,
-        "importPath": "Secret_manager",
-        "description": "Secret_manager",
-        "peekOfCode": "#password = fetchSecret1()\n#print(password)",
-        "detail": "Secret_manager",
-        "documentation": {}
-    },
-    {
         "label": "home",
         "kind": 2,
         "importPath": "application",
@@ -618,197 +198,116 @@
         "kind": 2,
         "importPath": "application",
         "description": "application",
-        "peekOfCode": "def AddEmployee():\n    return render_template('AddEmp.html')\n@app.route(\"/addemp\", methods=['POST'])\ndef AddEmp():\n    emp_id = request.form['emp_id']\n    first_name = request.form['first_name']\n    last_name = request.form['last_name']\n    pri_skill = request.form['pri_skill']\n    location = request.form['location']\n    emp_image_file = request.files['emp_image_file']",
-        "detail": "application",
-        "documentation": {}
-    },
-    {
-        "label": "AddEmp",
-        "kind": 2,
-        "importPath": "application",
-        "description": "application",
-        "peekOfCode": "def AddEmp():\n    emp_id = request.form['emp_id']\n    first_name = request.form['first_name']\n    last_name = request.form['last_name']\n    pri_skill = request.form['pri_skill']\n    location = request.form['location']\n    emp_image_file = request.files['emp_image_file']\n    add_data = \"INSERT INTO employees ( emp_id ,first_name, last_name, pri_skill, location) VALUES (%s, %s, %s, %s, %s)\"\n    data = (emp_id, first_name, last_name, pri_skill, location)\n    cursor = db_conn.cursor()",
-        "detail": "application",
-        "documentation": {}
-    },
-    {
-        "label": "GetEmployee",
-        "kind": 2,
-        "importPath": "application",
-        "description": "application",
-        "peekOfCode": "def GetEmployee():\n    return render_template('GetEmp.html')\n@app.route(\"/fetchdata\", methods=['POST'])\ndef GetEmp():\n    cursor = db_conn.cursor()\n    emp_id = request.form['emp_id']\n    query = \"SELECT * FROM employees WHERE emp_id = %s\"\n    try:\n        cursor.execute(query, (emp_id,))\n        myresult = cursor.fetchall()",
-        "detail": "application",
-        "documentation": {}
-    },
-    {
-        "label": "GetEmp",
-        "kind": 2,
-        "importPath": "application",
-        "description": "application",
-        "peekOfCode": "def GetEmp():\n    cursor = db_conn.cursor()\n    emp_id = request.form['emp_id']\n    query = \"SELECT * FROM employees WHERE emp_id = %s\"\n    try:\n        cursor.execute(query, (emp_id,))\n        myresult = cursor.fetchall()\n        print(myresult)\n    except Exception as e:\n        return str(e)",
-        "detail": "application",
-        "documentation": {}
-    },
-    {
-        "label": "app",
-        "kind": 5,
-        "importPath": "application",
-        "description": "application",
-        "peekOfCode": "app = Flask(__name__)\ndb_conn = mysql.connector.connect(\n    host=hostname,\n    port=3306,\n    user=username,\n    password=password,\n    database=Database)\ncursor=db_conn.cursor()\n#output = {}\n#table = Tablename",
-        "detail": "application",
-        "documentation": {}
-    },
-    {
-        "label": "db_conn",
-        "kind": 5,
-        "importPath": "application",
-        "description": "application",
-        "peekOfCode": "db_conn = mysql.connector.connect(\n    host=hostname,\n    port=3306,\n    user=username,\n    password=password,\n    database=Database)\ncursor=db_conn.cursor()\n#output = {}\n#table = Tablename\n#bucket= bucketname",
-        "detail": "application",
-        "documentation": {}
-    },
-    {
-        "label": "#output",
-        "kind": 5,
-        "importPath": "application",
-        "description": "application",
-        "peekOfCode": "#output = {}\n#table = Tablename\n#bucket= bucketname\n@app.route(\"/\", methods=['GET', 'POST'])\ndef home():\n    return render_template('AddEmp.html')\n@app.route(\"/addemployee\", methods=['GET','POST'])\ndef AddEmployee():\n    return render_template('AddEmp.html')\n@app.route(\"/addemp\", methods=['POST'])",
-        "detail": "application",
-        "documentation": {}
-    },
-    {
-        "label": "#table",
-        "kind": 5,
-        "importPath": "application",
-        "description": "application",
-        "peekOfCode": "#table = Tablename\n#bucket= bucketname\n@app.route(\"/\", methods=['GET', 'POST'])\ndef home():\n    return render_template('AddEmp.html')\n@app.route(\"/addemployee\", methods=['GET','POST'])\ndef AddEmployee():\n    return render_template('AddEmp.html')\n@app.route(\"/addemp\", methods=['POST'])\ndef AddEmp():",
-        "detail": "application",
-        "documentation": {}
-    },
-    {
-        "label": "home",
-        "kind": 2,
-        "importPath": "main",
-        "description": "main",
-        "peekOfCode": "def home():\n    return render_template('AddEmp.html')\n@app.route(\"/addemployee\", methods=['GET','POST'])\ndef AddEmployee():\n    return render_template('AddEmp.html')\n@app.route(\"/addemp\", methods=['POST'])\ndef AddEmp():\n    emp_id = request.form['emp_id']\n    first_name = request.form['first_name']\n    last_name = request.form['last_name']",
-        "detail": "main",
-        "documentation": {}
-    },
-    {
-        "label": "AddEmployee",
-        "kind": 2,
-        "importPath": "main",
-        "description": "main",
         "peekOfCode": "def AddEmployee():\n    return render_template('AddEmp.html')\n@app.route(\"/addemp\", methods=['POST'])\ndef AddEmp():\n    emp_id = request.form['emp_id']\n    first_name = request.form['first_name']\n    last_name = request.form['last_name']\n    pri_skill = request.form['pri_skill']\n    Company = request.form['Company']\n    add_data = \"INSERT INTO Emp ( emp_id ,first_name, last_name, pri_skill, Company) VALUES (%s, %s, %s, %s, %s)\"",
-        "detail": "main",
+        "detail": "application",
         "documentation": {}
     },
     {
         "label": "AddEmp",
         "kind": 2,
-        "importPath": "main",
-        "description": "main",
+        "importPath": "application",
+        "description": "application",
         "peekOfCode": "def AddEmp():\n    emp_id = request.form['emp_id']\n    first_name = request.form['first_name']\n    last_name = request.form['last_name']\n    pri_skill = request.form['pri_skill']\n    Company = request.form['Company']\n    add_data = \"INSERT INTO Emp ( emp_id ,first_name, last_name, pri_skill, Company) VALUES (%s, %s, %s, %s, %s)\"\n    data = (emp_id, first_name, last_name, pri_skill, Company)\n    cursor = db_conn.cursor()\n    cursor.execute(add_data, data)",
-        "detail": "main",
+        "detail": "application",
         "documentation": {}
     },
     {
         "label": "GetEmployee",
         "kind": 2,
-        "importPath": "main",
-        "description": "main",
+        "importPath": "application",
+        "description": "application",
         "peekOfCode": "def GetEmployee():\n    return render_template('GetEmp.html')\n@app.route(\"/fetchdata\", methods=['POST'])\ndef GetEmp():\n    cursor = db_conn.cursor()\n    emp_id = request.form['emp_id']\n    query = \"SELECT * FROM Emp WHERE emp_id = %s\"\n    try:\n        cursor.execute(query, (emp_id,))\n        myresult = cursor.fetchall()",
-        "detail": "main",
+        "detail": "application",
         "documentation": {}
     },
     {
         "label": "GetEmp",
         "kind": 2,
-        "importPath": "main",
-        "description": "main",
+        "importPath": "application",
+        "description": "application",
         "peekOfCode": "def GetEmp():\n    cursor = db_conn.cursor()\n    emp_id = request.form['emp_id']\n    query = \"SELECT * FROM Emp WHERE emp_id = %s\"\n    try:\n        cursor.execute(query, (emp_id,))\n        myresult = cursor.fetchall()\n        print(myresult)\n    except Exception as e:\n        return str(e)",
-        "detail": "main",
+        "detail": "application",
         "documentation": {}
     },
     {
         "label": "app",
         "kind": 5,
-        "importPath": "main",
-        "description": "main",
+        "importPath": "application",
+        "description": "application",
         "peekOfCode": "app = Flask(__name__)\nclient = boto3.client('secretsmanager')\nresponse = client.get_secret_value(\n  SecretId='Testst1'\n   )\ndatabase_secrets = json.loads(response['SecretString'])\nusername = database_secrets['username']\nresponse = client.get_secret_value(\n    SecretId='Testst1'\n    )",
-        "detail": "main",
+        "detail": "application",
         "documentation": {}
     },
     {
         "label": "client",
         "kind": 5,
-        "importPath": "main",
-        "description": "main",
+        "importPath": "application",
+        "description": "application",
         "peekOfCode": "client = boto3.client('secretsmanager')\nresponse = client.get_secret_value(\n  SecretId='Testst1'\n   )\ndatabase_secrets = json.loads(response['SecretString'])\nusername = database_secrets['username']\nresponse = client.get_secret_value(\n    SecretId='Testst1'\n    )\ndatabase_secrets = json.loads(response['SecretString'])",
-        "detail": "main",
+        "detail": "application",
         "documentation": {}
     },
     {
         "label": "response",
         "kind": 5,
-        "importPath": "main",
-        "description": "main",
+        "importPath": "application",
+        "description": "application",
         "peekOfCode": "response = client.get_secret_value(\n  SecretId='Testst1'\n   )\ndatabase_secrets = json.loads(response['SecretString'])\nusername = database_secrets['username']\nresponse = client.get_secret_value(\n    SecretId='Testst1'\n    )\ndatabase_secrets = json.loads(response['SecretString'])\npassword = database_secrets['password']",
-        "detail": "main",
+        "detail": "application",
         "documentation": {}
     },
     {
         "label": "database_secrets",
         "kind": 5,
-        "importPath": "main",
-        "description": "main",
+        "importPath": "application",
+        "description": "application",
         "peekOfCode": "database_secrets = json.loads(response['SecretString'])\nusername = database_secrets['username']\nresponse = client.get_secret_value(\n    SecretId='Testst1'\n    )\ndatabase_secrets = json.loads(response['SecretString'])\npassword = database_secrets['password']\ndb_conn = mysql.connector.connect(\n    host=hostname,\n    port=3306,",
-        "detail": "main",
+        "detail": "application",
         "documentation": {}
     },
     {
         "label": "username",
         "kind": 5,
-        "importPath": "main",
-        "description": "main",
+        "importPath": "application",
+        "description": "application",
         "peekOfCode": "username = database_secrets['username']\nresponse = client.get_secret_value(\n    SecretId='Testst1'\n    )\ndatabase_secrets = json.loads(response['SecretString'])\npassword = database_secrets['password']\ndb_conn = mysql.connector.connect(\n    host=hostname,\n    port=3306,\n    user=username,",
-        "detail": "main",
+        "detail": "application",
         "documentation": {}
     },
     {
         "label": "response",
         "kind": 5,
-        "importPath": "main",
-        "description": "main",
+        "importPath": "application",
+        "description": "application",
         "peekOfCode": "response = client.get_secret_value(\n    SecretId='Testst1'\n    )\ndatabase_secrets = json.loads(response['SecretString'])\npassword = database_secrets['password']\ndb_conn = mysql.connector.connect(\n    host=hostname,\n    port=3306,\n    user=username,\n    password=password,",
-        "detail": "main",
+        "detail": "application",
         "documentation": {}
     },
     {
         "label": "database_secrets",
         "kind": 5,
-        "importPath": "main",
-        "description": "main",
+        "importPath": "application",
+        "description": "application",
         "peekOfCode": "database_secrets = json.loads(response['SecretString'])\npassword = database_secrets['password']\ndb_conn = mysql.connector.connect(\n    host=hostname,\n    port=3306,\n    user=username,\n    password=password,\n    database=Database)\n@app.route(\"/\", methods=['GET', 'POST'])\ndef home():",
-        "detail": "main",
+        "detail": "application",
         "documentation": {}
     },
     {
         "label": "password",
         "kind": 5,
-        "importPath": "main",
-        "description": "main",
+        "importPath": "application",
+        "description": "application",
         "peekOfCode": "password = database_secrets['password']\ndb_conn = mysql.connector.connect(\n    host=hostname,\n    port=3306,\n    user=username,\n    password=password,\n    database=Database)\n@app.route(\"/\", methods=['GET', 'POST'])\ndef home():\n    return render_template('AddEmp.html')",
-        "detail": "main",
+        "detail": "application",
         "documentation": {}
     },
     {
         "label": "db_conn",
         "kind": 5,
-        "importPath": "main",
-        "description": "main",
+        "importPath": "application",
+        "description": "application",
         "peekOfCode": "db_conn = mysql.connector.connect(\n    host=hostname,\n    port=3306,\n    user=username,\n    password=password,\n    database=Database)\n@app.route(\"/\", methods=['GET', 'POST'])\ndef home():\n    return render_template('AddEmp.html')\n@app.route(\"/addemployee\", methods=['GET','POST'])",
-        "detail": "main",
+        "detail": "application",
         "documentation": {}
     }
 ]
